@@ -9,7 +9,7 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML 
-- CSS
+- CSS (responsividade - @media)
 - Express
 -JSON
 - NodeJs

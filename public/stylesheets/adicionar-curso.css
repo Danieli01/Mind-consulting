@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+
+}
+
+main {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    border: solid .1px red;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-header {
+    display: flex;
+    flex-flow:row nowrap ;
+    align-items: center;
+    gap: 5rem;
+}
+
+.box-header button{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow:2px 2px 2px rgb(96, 21, 21);
+}
+
+.box-header button:hover {
+    background-color: rgb(250, 235, 215);
+}
+
+.box-body {
+    background-color: rgb(250, 235, 215);
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.form-group,
+.products_files_area,
+.products_files_area {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-group input,
+select,
+textarea {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(96, 21, 21);
+}
+
+
+footer {
+    display: flex;
+    height: 4rem;
+}
+
+@media (min-width:426px){
+    header {
+        margin: 0 4rem;
+    }
+    .box-body{
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px){
+    .box-body{
+        width: 60%;
+    }
+}

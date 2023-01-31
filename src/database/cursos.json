@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nome": "curso 1",
+    "professorResponsavel": "Jorge Silva",
+    "categoria": "Desenvolvimento Web",
+    "descricao": "curso online de front-end com certificado",
+    "imagem": "foto do curso"
+  },
+  {
+    "id": 2,
+    "nome": "curso 2",
+    "professorResponsavel": "Maria Silva",
+    "categoria": "Desenvolvimento Web",
+    "descricao": "curso online de front-end com certificado",
+    "imagem": "foto do curso1"
+  }
+]

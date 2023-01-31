@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/stylesheets/admin.css">
+    
+</head>
+<body>
+  <header>
+    <h1>Mind Cursos</h1>
+    <nav>
+      <a href="/admin/adicionar-curso">Adicionar</a>
+    </nav>
+  </header>
+  <main>
+    <div class="box-body">
+      <table class="box-table">
+          <thead>
+              <th class="table-id">ID</th>
+              <th class="table-name">Nome do Curso</th>
+              <th class="table-inventory">Professor Responsável</th>
+              <th class="table-picture">Categoria</th>
+              <th class="table-price">Descrição</th>
+              <th class="table-action">Imagem</th>
+              <th class="table-action">Ações</th>
+              
+          </thead>
+          <tr>
+              <% for (let curso of cursos) { %>
+              <td class="table-id"><%= curso.id %></td>
+              <td class="table-name"><%= curso.nome %></td>
+              <td class="table-inventory"><%= curso.professorResponsavel %> </td>
+              <td class="table-price"><%= curso.categoria %></td>
+              <td class="table-price"><%= curso.descricao %></td>
+              <%# <td class="table-picture"><img src="/images/products/ " alt=""></td> %> 
+              <td class="table-action">
+                  <a class="action-edit" href="/admin/update/<%= curso.id %> ">Editar</a>
+                  
+                  <a class="action-delete" href="/admin/delete/<%= curso.id %> ">Excluir</a>                              
+              </td>
+          </tr>
+          <% } %>
+      </table>
+  </main>
+</body>
+</html>

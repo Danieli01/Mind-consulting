@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/stylesheets/adicionar-curso.css">
+    
+    <title>Painel Administrativo - Infinity Cosméticos</title>
+
+</head>
+<body>
+    <header>
+        <h2>Mind Cursos</h2>
+
+    </header>
+    <div class="content-products">
+        <form  action="/admin/create" method="POST" id="form">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Novo Curso</h3>
+                        <form class="box-tools">
+                           <button type="submit">salvar</button>
+                        </form>
+                    </div>
+                    <div class="box-body">
+
+                        <div class="form-group">
+                            <label for="name">Nome do Curso</label>
+                            <input  type="text" id="name" name="name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="professor">Professor responsável</label>
+                            <input  type="text" id="professor" name="professor" />
+                        </div>
+               
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select name="categoria" id="categoria" >
+                                    <option value="" selected></option>
+                                    <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                                    <option value="Design UX">Design UX</option>
+                                    <option value="Análise de dados">Análise de dados</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="description">Descrição do curso</label>
+                            <textarea id="description" name="description" style="height: 5rem;" h3></textarea>
+                        </div>
+  
+
+                        <div class="products_files_area">
+                            <label>Imagens do Produto</label><br/>
+                            <input type="file" name="images"/>
+                        </div>
+
+        
+                    </div>
+                </div>
+        </form>
+    </div>
+</main>
+<footer>
+    footer
+</footer>
+</body>
+</html>

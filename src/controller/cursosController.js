@@ -14,12 +14,13 @@ module.exports = {
     }, 
 
     addCursos: (req, res) => {
-        res.render('adicionar-curso');
+        res.render('adicionar-curso', {curso: null});
     },
 
     createCursos: (req, res) => {
         CursosModel.cursosCreate(req.body);
-        res.redirect('/admin');
+        
+        return res.redirect('/admin');
     }, 
 
 

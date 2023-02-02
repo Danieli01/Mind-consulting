@@ -14,10 +14,14 @@
 <body>
     <header>
         <h2>Mind Cursos</h2>
-
     </header>
     <div class="content-products">
-        <form  action="/admin/create" method="POST" id="form">
+        
+        <% if(!curso) { %>
+            <form  action="/admin/create" method="post" id="form">
+         <% } else { %>
+             <form  action="/admin/update/<%=curso.id%>?_method=PUT" method="POST" id="form">
+        <% } %>
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">Novo Curso</h3>
@@ -26,17 +30,15 @@
                         </form>
                     </div>
                     <div class="box-body">
-
                         <div class="form-group">
                             <label for="name">Nome do Curso</label>
-                            <input  type="text" id="name" name="name" />
+                            <input  type="text" id="name" name="nome" />
                         </div>
 
                         <div class="form-group">
                             <label for="professor">Professor responsável</label>
-                            <input  type="text" id="professor" name="professor" />
+                            <input  type="text" id="professor" name="professorResponsavel"/>
                         </div>
-               
                         <div class="form-group">
                             <label for="categoria">Categoria</label>
                             <select name="categoria" id="categoria" >
@@ -46,19 +48,14 @@
                                     <option value="Análise de dados">Análise de dados</option>
                             </select>
                         </div>
-        
                         <div class="form-group">
                             <label for="description">Descrição do curso</label>
-                            <textarea id="description" name="description" style="height: 5rem;" h3></textarea>
+                            <textarea id="description" name="descricao" style="height: 5rem;" h3></textarea>
                         </div>
-  
-
                         <div class="products_files_area">
                             <label>Imagens do Produto</label><br/>
-                            <input type="file" name="images"/>
+                            <input type="file" name="imagem"/>
                         </div>
-
-        
                     </div>
                 </div>
         </form>

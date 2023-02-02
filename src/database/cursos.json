@@ -1,18 +1,18 @@
 [
-  {
-    "id": 1,
-    "nome": "curso 1",
-    "professorResponsavel": "Jorge Silva",
-    "categoria": "Desenvolvimento Web",
-    "descricao": "curso online de front-end com certificado",
-    "imagem": "foto do curso"
-  },
-  {
-    "id": 2,
-    "nome": "curso 2",
-    "professorResponsavel": "Maria Silva",
-    "categoria": "Desenvolvimento Web",
-    "descricao": "curso online de front-end com certificado",
-    "imagem": "foto do curso1"
-  }
+    {
+        "id": "487a8241-48bf-4f22-a640-dd3104362506",
+        "nome": "teste 1",
+        "professorResponsavel": "dani",
+        "categoria": "Desenvolvimento Web",
+        "descricao": "sfdggd",
+        "imagem": ""
+    },
+    {
+        "id": "248d24df-780c-45e2-a574-41fc726df828",
+        "nome": "teste 2",
+        "professorResponsavel": "jaque",
+        "categoria": "Análise de dados",
+        "descricao": "editado",
+        "imagem": ""
+    }
 ]

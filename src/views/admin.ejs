@@ -39,8 +39,9 @@
               <%# <td class="table-picture"><img src="/images/products/ " alt=""></td> %> 
               <td class="table-action">
                   <a class="action-edit" href="/admin/update/<%= curso.id %> ">Editar</a>
-                  
-                  <a class="action-delete" href="/admin/delete/<%= curso.id %> ">Excluir</a>                              
+                  <form action="/admin/delete/<%= curso.id %>?_method=DELETE" method="post">
+                    <button class="action-delete" href="/admin/delete/<%= curso.id %> ">Excluir</button> 
+                  </form>                   
               </td>
           </tr>
           <% } %>

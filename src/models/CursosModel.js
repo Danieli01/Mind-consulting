@@ -12,8 +12,8 @@ module.exports = {
       fs.writeFileSync(cursosList, JSON.stringify(cursos, null, 4));
     },
 
-    cursosCreate: function ({nome,professorResponsavel,categoria,descricao,imagem}) {
-        if (!nome || !professorResponsavel, !categoria || !descricao || !imagem )
+    cursosCreate: function ({nome, professorResponsavel, categoria, descricao, imagem}) {
+        if (!nome || !professorResponsavel || !categoria || !descricao)
          return 
 
         const curso = this.cursos();
@@ -39,16 +39,16 @@ module.exports = {
       updateCursos: function (id, {nome, professorResponsavel,categoria, descricao, imagem}) {
         if(!id) return 
   
-        if (!nome || !professorResponsavel, !categoria || !descricao || !imagem) return
+        if (!nome || !professorResponsavel || !categoria || !descricao) return
   
         const cursos = this.cursos();
-        const newcurso = cursos.find(curso => curso.id == id);
+        const newCurso = cursos.find(curso => curso.id == id);
   
-        newcurso.nome = nome;
-        newcurso.professorResponsavel = professorResponsavel;
-        newcurso.categoria = categoria;
-        newcurso.descricao = descricao;
-        newcurso.imagem = imagem;
+        newCurso.nome = nome;
+        newCurso.professorResponsavel = professorResponsavel;
+        newCurso.categoria = categoria;
+        newCurso.descricao = descricao;
+        newCurso.imagem = imagem;
         
   
         this.saveCursos(cursos);
